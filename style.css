@@ -1,0 +1,417 @@
+html {height: 100%;}
+body {
+    height: 100%;
+    font: 14px/14px 'Times New Roman', Times, sans-serif;
+    background-color: #FFF;
+}
+
+ol, ul {list-style: none;}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;}
+
+/*@media screen and (max-width: 800px) {*/
+    /*#header {*/
+        /*height: 80%;*/
+        /*font: 12px/12px 'Times New Roman', Times, sans-serif;*/
+        /*background-color: #FFF;*/
+    /*}*/
+    /*#home {*/
+        /*height: 80%;*/
+        /*font: 12px/12px 'Times New Roman', Times, sans-serif;*/
+        /*background-color: #FFF;*/
+    /*}*/
+/*}*/
+
+/*@media screen and (max-width: 479px) {*/
+    /*#header {*/
+        /*height: 60%;*/
+        /*font: 10px/10px 'Times New Roman', Times, sans-serif;*/
+        /*background-color: #FFF;*/
+    /*}*/
+/*}*/ Пока не разобралась как писать новый стиль для разных устройств
+
+a, a:hover {text-decoration: none;}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {clear: both;}
+.left {float: left;}
+.right {float: right;}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+#header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+}
+
+.logo {
+    float: left;
+}
+
+.nav {
+    float: right;
+    padding-top: 5px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 40px;
+}
+
+.nav a:hover {
+    color: #fed136;
+}
+
+.nav a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+
+#home {
+    height: 700px;
+    padding-top: 270px;
+    text-align: center;
+    color: #FFFFFF;
+
+    background: #222 url(../img/home_bg.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+
+#home h3 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font: 40px/40px Arial, sans-serif;
+}
+
+#home h1 {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font: 75px/75px Arial, sans-serif;
+}
+
+.btn {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px 30px;
+    font: bold 24px/24px Arial, sans-serif;
+    background: #fed136;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #8C7A0B;
+    color: #FFFFFF;
+}
+
+.box {
+    padding: 120px 0;
+}
+
+#services {
+    text-align: center;
+}
+
+h2.title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font: bold 40px/40px Arial, sans-serif;
+    color: #222;
+}
+
+h5.title {
+    margin-bottom: 10px;
+    font: bold 18px/18px Arial, sans-serif;
+    color: #222;
+}
+
+.descr {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #777;
+}
+
+.services-wrap,
+.portfolio-wrap,
+.about-wrap,
+.team-wrap,
+#messege {
+    padding-top: 70px;
+}
+
+.services-item {
+    float: left;
+    width: 33.33%;
+    padding: 90px 10px 0;
+}
+
+.services-item p {
+    font-size: 18px;
+    color: #777;
+    line-height: 24px;
+}
+
+.commerce {
+    background: url(../img/commerce.png) no-repeat center top;
+}
+
+.responsive {
+    background: url(../img/responsive.png) no-repeat center top;
+}
+
+.security {
+    background: url(../img/security.png) no-repeat center top;
+}
+
+#portfolio {
+    text-align: center;
+    background: #F7F7F7;
+}
+
+.portfolio-item {
+    float: left;
+    width: 31%;
+    margin-right: 3.5%;
+    margin-bottom: 50px;
+    background: #FFFFFF;
+}
+
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.portfolio-item:last-child(1),
+.portfolio-item:last-child(2),
+.portfolio-item:last-child(3) {
+    margin-bottom: 0;
+}
+
+.p-item-footer {
+    padding: 25px 20px;
+}
+
+.p-item-footer h5.title {
+    margin-bottom: 4px;
+}
+
+#about {
+    text-align: center;
+}
+
+.about-text {
+    width: 35%;
+}
+
+.about-text h5 {
+    line-height: 24px;
+}
+
+.about-text h5 span {
+    text-transform: uppercase;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #777;
+    line-height: 24px;
+}
+
+.about-img {
+    width: 30%;
+}
+
+.about-img:after{
+    content: '';
+    display: block;
+    height: 94px;
+    width: 3px;
+    margin: 0 auto;
+    background: #f1f1f1;
+}
+
+.about-img img {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+}
+
+.team-item {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+}
+
+.team-item img {
+    margin-bottom: 15px;
+    border: 7px solid #fff;
+    border-radius: 50%;
+}
+
+.descr p {
+    padding: 20px 20px 80px;
+}
+
+.cat {
+    font: 14px/14px Arial, sans-serif;
+    color: #777;
+}
+
+.social { margin-top: 10px}
+
+.social a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 0 3px;
+    border: 3px solid #222;
+    border-radius: 50%;
+    background: url(../img/social-sprite.png) no-repeat;
+}
+
+.social a.black {
+    background-color: #222;
+}
+
+.social a.ic-tw {
+    background-position: 0 0;
+}
+.social a.ic-tw:hover {
+    background-color: #00aced;
+    border-color: #00aced;
+    background-position: 0 -40px;
+}
+
+.social a.ic-tw.black {
+    border-color: #222;
+    background-position: 0 -40px;
+}
+
+.social a.ic-fb {
+    background-position: -40px 0;
+}
+
+.social a.ic-fb:hover {
+    background-color: #3b5998;
+    border-color: #3b5998;
+    background-position: -40px -40px;
+}
+
+.social a.ic-fb.black {
+    border-color: #222;
+    background-position: -40px -40px;
+}
+.social a.ic-pn {
+    background-position: -80px 0;
+}
+
+.social a.ic-pn:hover {
+    border-color: #cb2028;
+    background-color: #cb2028;
+    background-position: -80px -40px;
+}
+
+.social a.ic-pn.black {
+    border-color: #222;
+    background-position: -80px -40px;
+}
+.social a.ic-gl {
+    background-position: -120px 0;
+}
+
+.social a.ic-gl:hover {
+    border-color: #d95232;
+    background-color: #d95232;
+    background-position: -120px -40px;
+}
+
+.social a.ic-gl.black {
+    border-color: #222;
+    background-position: -120px -40px;
+}
+
+#brand {
+    padding: 60px;
+    text-align: center;
+}
+
+#brand a {
+    display: inline-block;
+    margin-right: 40px;
+}
+#brand a:last-child {margin-right: 0;}
+
+#brand img {vertical-align: middle;}
+
+#contact {
+    text-align: center;
+    background: #222 url(../img/map-bg.png) no-repeat right bottom;
+}
+
+#contact h2.title {color: #fff}
+
+#messege .left,
+#messege .right {width: 48%}
+
+#messege input[type="text"],
+#messege textarea {
+    font: bold 14px/14px Arial, sans-serif;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+#messege input[type="text"] {
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+#messege textarea {
+    height: 210px;
+    border: none;
+    resize: none;
+}
+
+::-webkit-input-placeholder {
+    font: bold 14px/14px Arial, sans-serif;
+    color: #bbb;
+}
+
+#copyright {
+    padding: 25px 0;
+}
+
+#copyright p {
+    margin-top: 12px;
+    font: 14px/14px Arial, sans-serif;
+    color: #555;
+}
+
+#copyright .social {
+    margin-top: 0;
+    margin-right: 250px;
+}
